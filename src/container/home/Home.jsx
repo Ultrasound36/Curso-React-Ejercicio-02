@@ -1,4 +1,5 @@
 import React from 'react'
+import Style from './home.module.css'
 import ContactForm from '../../components/contactForm/ContactForm'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
@@ -7,8 +8,10 @@ import SectionPrincipal from '../../components/sectionPrincipal/SectionPrincipal
 import SectionSecondary from '../../components/sectionSecondary/SectionSecondary'
 
 const Home = () => {
+
     return (
         <>
+
         <Menu />
         <Header />
 
@@ -25,6 +28,7 @@ const Home = () => {
         </section>
 
         <Footer />
+        
         </>
     )
 }

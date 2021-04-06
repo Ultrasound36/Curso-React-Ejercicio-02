@@ -3,25 +3,39 @@ import React from 'react'
 const ContactForm = () => {
     return (
         <>
-          <div className="container m-2 mb-2">
-            <div className="row">
+          <div className="container">
+            <div className="row m-2 p-2">
             <h2>Contactenos</h2>
             <hr className="my-2"/>
             <form>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    <label htmlFor="nombre" className="form-label">Nombres</label>
+                    <input type="text" className="form-control" id="nombre" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" />
+                    <label htmlFor="direccion" className="form-label">Dirección</label>
+                    <input type="text" className="form-control" id="direccion" />
                 </div>
-                <div className="mb-3 form-check">
-                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+                <div className="mb-3">
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />
+                    <div id="emailHelp" className="form-text">Ingresar su correo de buena forma.</div>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <div className="mb-3">
+                    <label className="form-label" htmlFor="movil">Movil</label>
+                    <input type="text" className="form-control" id="movil" />
+                </div>
+                <div className="mb-3">
+                <label htmlFor="seleccion">Elija un lenguaje</label>
+                    <select className="form-control" id="seleccion">
+                        <option>Java</option>
+                        <option>NodeJS</option>
+                        <option>Python</option>
+                        <option>C#</option>
+                        <option>PHP</option>
+                    </select>
+                </div>
+                <button type="submit" className="btn btn-primary btn-lg">Enviar</button>
             </form>
 
             </div>
